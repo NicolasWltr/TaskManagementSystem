@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --open",
+    "host": "ng serve --host 0.0.0.0 --open",
+    "startp": "ng serve --open --configuration=production",
+    "hostp": "ng serve --host 0.0.0.0 --open --configuration=production",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -17,7 +20,10 @@
     "@angular/platform-browser": "^19.2.0",
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/router": "^19.2.0",
+    "@tailwindcss/postcss": "^4.1.5",
+    "postcss": "^8.5.3",
     "rxjs": "~7.8.0",
+    "tailwindcss": "^4.1.5",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
